@@ -10,3 +10,5 @@ console.log(string1+string2+string3);
 
 console.log(string1.charAt(1));
 console.log(string1[1]);
+
+
