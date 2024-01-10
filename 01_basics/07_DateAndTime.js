@@ -12,19 +12,18 @@ console.log(myDate);
 // console.log(myDate.toLocaleTimeString());  
 
 
-console.log(typeof(myDate));
+//console.log(typeof(myDate));
 
 let myCreatedDate= new Date(2024,0,10);
 
-console.log(myCreatedDate.toDateString());
+//console.log(myCreatedDate.toDateString());
 
 //Time 
 
 let myTimeStamp=Date.now();
 
-console.log(myTimeStamp);
+//console.log(myTimeStamp);
 
 let newDate=new Date()
-console.log(newDate);
-console.log(newDate.getDay());
-console.log(newDate.getFullYear());
+// 
+console.log(Date.now());
