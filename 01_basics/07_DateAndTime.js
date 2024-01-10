@@ -18,3 +18,13 @@ let myCreatedDate= new Date(2024,0,10);
 
 console.log(myCreatedDate.toDateString());
 
+//Time 
+
+let myTimeStamp=Date.now();
+
+console.log(myTimeStamp);
+
+let newDate=new Date()
+console.log(newDate);
+console.log(newDate.getDay());
+console.log(newDate.getFullYear());
