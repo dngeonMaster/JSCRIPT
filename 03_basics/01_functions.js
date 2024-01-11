@@ -31,3 +31,35 @@ const r=addTwoNum(3,4)
 
 // console.log("Result ",result);
 // console.log("Result ",r);
+
+//```
+
+function loginUserMessage(username){
+    if(username==undefined){
+        console.log("Please Enter The username");
+        return
+    }
+    return `${username} just logged in`
+}
+
+// console.log(loginUserMessage("Kaushik"));
+// console.log(loginUserMessage());
+
+//Creating Shopping Cart
+
+function addCartPrice(...num1){  //... ->rest operator
+  return num1
+}
+
+//console.log(addCartPrice(200,344,231));  //to add more numbers we use rest operator
+
+
+const user={
+    username : "Kaushik",
+    price : 123,
+}
+function handleObject(anyObject){  
+    console.log(`User name is ${anyObject.username} and price is ${anyObject.price}`);
+}
+
+handleObject(user)
