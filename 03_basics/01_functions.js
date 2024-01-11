@@ -62,4 +62,7 @@ function handleObject(anyObject){
     console.log(`User name is ${anyObject.username} and price is ${anyObject.price}`);
 }
 
-handleObject(user)
+handleObject(user)  //passing object in a function
+
+//we can also pass array in a function
+
