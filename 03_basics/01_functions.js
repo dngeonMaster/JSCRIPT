@@ -19,5 +19,15 @@ function sayMyName(){
 function addTwoNum(number1,number2){  //Here we call these values as parameters
     console.log(number1+number2)
 }
-addTwoNum(3,6)  //while calling a fucntion ,we call these values as argument
+//addTwoNum(3,6)  //while calling a fucntion ,we call these values as argument
 
+
+function addTwoNum(number1,number2){  //Here we call these values as parameters
+    let r=number1+number2
+    return r
+}
+const result=addTwoNum(3,4)
+const r=addTwoNum(3,4)
+
+// console.log("Result ",result);
+// console.log("Result ",r);
