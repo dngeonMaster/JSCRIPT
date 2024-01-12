@@ -29,3 +29,12 @@ function one(){
     two();
 }
 one();
+
+if(true){
+    const username="Kaushik"
+    if(username==="Kaushik"){
+        const website="Google"
+        console.log(username+" "+website);
+    }
+    //console.log(website);  //Out of scope
+}
