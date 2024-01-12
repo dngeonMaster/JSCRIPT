@@ -38,3 +38,9 @@ if(true){
     }
     //console.log(website);  //Out of scope
 }
+//addTwo(5)  //Here it cannot be accessed before declaring it
+const addTwo = function(num){  //This is an expression and can hold jSon values , funcitons etc
+
+    return num+2;
+}
+console.log(addTwo(5));
