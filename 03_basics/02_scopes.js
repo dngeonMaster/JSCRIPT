@@ -11,7 +11,21 @@ if(true){  //Block Scope
 
 //This wont work as a b are not in the scope of console function
 
-console.log(a);
-// console.log(b);
-console.log(c);  //This will work,and this is why we dont use var
+// console.log(a);
+// // console.log(b);
+// console.log(c);  //This will work,and this is why we dont use var
 
+
+//Nested Function
+
+function one(){
+    const username="kaushik"
+
+    function two(){
+        const website="Google"
+        console.log(username);
+    }
+    console.log(website);
+    two();
+}
+one();
