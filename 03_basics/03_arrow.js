@@ -32,8 +32,13 @@ const kaushik= ()=>{
 //Arrow Function
 
 // const addTwo=()=>{}  //This is an arrow function
-const addTwo=(num1,num2)=>{
-    return num1 + num2
+// const addTwo=(num1,num2)=>{
+//     return num1 + num2
 
-} 
+// } 
+// console.log(addTwo(1,3))
+
+const addTwo=(num1,num2)=> (num1 + num2)  //This is called implicit Return 
+                                        //We dont use curly braces here(Used in React)
+   
 console.log(addTwo(1,3))
