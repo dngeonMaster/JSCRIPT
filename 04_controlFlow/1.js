@@ -13,10 +13,10 @@ const balance=600
 
 //if(balance >500) console.log("test"); ///implicite scope
 
-//Nesting
-if (balance<500) {
-    console.log("yes");}
-    else if(balance<750){
-        console.log("yes");
-    }
+// //Nesting
+// if (balance<500) {
+//     console.log("yes");}
+//     else if(balance<750){
+//         console.log("yes");
+//     }
     
