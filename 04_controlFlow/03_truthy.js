@@ -36,3 +36,11 @@ let val1;
 // console.log(val1);
 // console.log(val1);
 // console.log(val1);
+
+//Terniary Operator
+
+//condition ? true : false
+
+const price = 100
+
+price>10 ? console.log("Greater than 10") : console.log("less than 10");
