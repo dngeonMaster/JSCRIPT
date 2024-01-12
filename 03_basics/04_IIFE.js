@@ -6,4 +6,7 @@
 //IIFE ()()
 (function chai(){
     console.log("DB Connected");
-})()
+})();
+( ()=>{
+    console.log("DB2 connected because of ; ");
+})();
