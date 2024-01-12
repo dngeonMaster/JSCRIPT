@@ -1,4 +1,4 @@
-
+//node 03_basics/02_scopes.js
 var c=20 //Global scope
 let a=100
 // {}  <-- scope 
@@ -25,7 +25,7 @@ function one(){
         const website="Google"
         console.log(username);
     }
-    console.log(website);
+    //console.log(website);  //we cant access it here as it is out of scope
     two();
 }
 one();
