@@ -14,3 +14,5 @@ const newNums=myNumbers
                       .map((num) => num+1)
 
 console.log(newNums);
+
+//REDUCE JS
