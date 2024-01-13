@@ -15,3 +15,5 @@ for (const greet of greetings) {
 }
 
 //MAPS
+
+const map=new Map()
