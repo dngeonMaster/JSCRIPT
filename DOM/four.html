@@ -19,10 +19,10 @@
         li.innerHTML=`${langName}` 
         document.querySelector('.language').appendChild(li)  
     }
-    // addLanguage("Cpp")
-    // addLanguage("Java")
-    // addLanguage("Rust")
-    // addLanguage("Ruby")
+    addLanguage("Cpp")
+    addLanguage("Java")
+    addLanguage("Rust")
+    addLanguage("Ruby")
 
 
 
@@ -35,6 +35,22 @@
     }
 
     addOptimalText("Python")
+
+
+    //EDITING VALUE
+
+    const secondLang=document.querySelector("li:nth-child(2)")
+    //secondLang.innerHTML="mojo"
+
+    const newLi=document.createElement('li')
+    newLi.textContent="MOOOO"
+    secondLang.replaceWith(newLi)
+
+
+    //REMOVE
+
+    const lastLang=document.querySelector('li:last-child')
+    lastLang.remove()
 
 </script>
 </html>
