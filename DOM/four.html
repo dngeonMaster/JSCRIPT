@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121;color: antiquewhite;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+
+    //This is workable but not a optimized way 
+    function addLanguage(langName){
+        const li=document.createElement('li');
+        li.innerHTML=`${langName}` 
+        document.querySelector('.language').appendChild(li)  
+    }
+    // addLanguage("Cpp")
+    // addLanguage("Java")
+    // addLanguage("Rust")
+    // addLanguage("Ruby")
+
+
+
+
+    //Optimized approach
+    function addOptimalText(langName){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addOptimalText("Python")
+
+</script>
+</html>
