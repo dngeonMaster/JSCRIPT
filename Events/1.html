@@ -20,8 +20,58 @@
 
 <script>
     //Activities of browser == events
-    document.getElementById("owl").onclick=function(){
-        alert("You Clicked on Owl")
-    }
-</script>
+    // document.getElementById("owl").onclick=function(){
+    //     alert("You Clicked on Owl")  //We can use a better method than this
+    // }
+
+      //attachEvent()
+    //jQuery->On
+
+    //type,timestamp,defaultPrevented
+     //target , toElement , srcElement ,currentTarget
+     //clientX , clientY screenX, screenY
+     //altkey, ctrlkey,shiftkey, keycode
+
+
+
+
+  //++++++++++++++EVENT PROPAGATION +++++++++++++++++++++++++++++++++
+    //CAPTURING MODE
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("Clicked Inside the ul");
+    // },true)
+
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("Clicked owl");
+    // },true)
+ 
+    //BUBBLIING MODE
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("Clicked Inside the ul");
+    // },false)
+
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("Clicked owl");
+    //     e.stopPropagation();  //The propagation of event will get stop
+    // },false)
+
+
+    // //Prevent Default
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault()
+    //     e.stopPropagation()
+    //     console.log("google clicked");
+        
+    // })
+
+
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e);
+    })
+</script>    
+     
 </html>
