@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141;color: aliceblue;">
+    <h1>Kaushik Borah</h1>
+    <button id="stop">STOP</button>
+    <button id="start">START</button>
+</body>
+<script>
+    const sayDate=function(str){
+        console.log(str,Date.now());
+
+    }
+
+    const stp=setInterval(sayDate,2000,"HII")
+    
+    clearInterval(stp,5000)
+
+</script>
+</html>
