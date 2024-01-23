@@ -43,3 +43,31 @@ const promise3= new Promise(function(resolve,reject){
 promise3.then(function(user){
    console.log(user);
 })
+
+
+const promise4=new Promise(function(resolve,reject){
+    setTimeout(function(){
+        let error=true
+
+        if(!error){
+            resolve({
+                username : kaushik,
+                pw :123,
+            })
+        }
+        else{
+            reject('Something went wrong')
+        }
+    },2000)
+})
+
+
+//taking username by chaining
+promise4.then((user)=>{
+     console.log(user);
+     return user.username
+}).then((username)=>{
+    console.log(username);
+}).catch(function(error){
+    console.log(error);
+})
