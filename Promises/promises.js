@@ -28,3 +28,18 @@ new Promise(function (resolve,reject){
 }).then(function(){
     console.log("I am fine");
 })
+
+//Passing DBB
+const promise3= new Promise(function(resolve,reject){
+    setTimeout(function(){
+       resolve({
+        username : "Kaushik17",
+        email : "kaushik@google.com",
+        age : 23,
+       })
+    },2000)
+})
+//Taking the data from promise
+promise3.then(function(user){
+   console.log(user);
+})
