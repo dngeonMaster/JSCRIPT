@@ -70,4 +70,36 @@ promise4.then((user)=>{
     console.log(username);
 }).catch(function(error){
     console.log(error);
+}).finally(()=>{
+    console.log("The promise is either resolved or rejected");
 })
+
+
+
+const promise5 = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        let error=true
+
+        if(!error){
+            resolve({
+                username : "JavaScript",
+                pw :123,
+            })
+        }
+        else{
+            reject('JS went wrong')
+        }
+    },2000)
+})
+
+//Consuming Promises by Async Await
+
+async function consumePromise5(){
+  try {
+    const Response= await promise5
+    console.log(Response);
+  } catch (error) {
+    console.log(error);
+  }
+}
+consumePromise5()
