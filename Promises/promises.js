@@ -102,4 +102,4 @@ async function consumePromise5(){
     console.log(error);
   }
 }
-consumePromise5()
+consumePromise5()  
